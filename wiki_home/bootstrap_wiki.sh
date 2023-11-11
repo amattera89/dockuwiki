@@ -77,7 +77,6 @@ if [ ! -d "$REPO_PATH/.git" ]; then
 
 	if [ "`find .git/objects -type f | wc -l`" -eq "0" ]; then
 		echo "cloned empty repo. creating new wiki..."
-
 		# empty git repo, let's extract and commit dokuwiki
 		tar -xvzf /tmp/dokuwiki*.tgz -C $REPO_PATH --strip 1
 
